@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff1e6;
+  font-family: Georgia, serif;
+}
+
+.card {
+  background: #fffaf5;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.vintage {
+  font-style: italic;
+  color: #6b4c4c;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.cupid {
+  position: absolute;
+  left: 20%;
+  font-size: 24px;
+}
+
+.heart {
+  position: absolute;
+  right: 20%;
+  font-size: 30px;
+}
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#cupid {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  font-size: 40px;
+}
+
+#heart {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  font-size: 50px;
+  transition: transform 0.3s;
+}
+
+#arrow {
+  position: absolute;
+  left: 20%;
+  top: 52%;
+  font-size: 30px;
+  opacity: 0;
+}
+button {
+  background-color: #ffcad4;
+  cursor: pointer;
+}
+.page3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slide {
+  max-width: 80%;
+  border-radius: 15px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+body {
+  opacity: 0;
+  animation: pageFade 0.8s ease forwards;
+}
+
+@keyframes pageFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.final-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff1e6;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.sub {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.line {
+  opacity: 0;
+  margin: 10px 0;
+}
